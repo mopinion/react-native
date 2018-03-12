@@ -1,6 +1,11 @@
 require "json"
 
-package = JSON.parse(File.read(File.join(__dir__, "package.json")))
+# package = JSON.parse(File.read(File.join(__dir__, "package.json")))
+package = {
+	:version => "0.51.0",
+	:description => "A framework for building native apps using React",
+	:license => "BSD-3-Clause"
+}
 version = package['version']
 
 source = { :git => 'https://github.com/facebook/react-native.git' }
